@@ -12,10 +12,6 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	background: #3A5159;
-	color: #fff;
-}
 
 h1, h2 {
 	font-family: 'Yellowtail', cursive;
@@ -36,12 +32,28 @@ section span {
 }
 
 
-footer {
-	background: #664D52;
-}
-
 /************* Header ***********/
 
+header {
+	background: #3A5159;
+	color: #fff;
+	float: left;
+  	width: 100%;
+  	position: fixed;
+}
+
+header h1 {
+	float: left;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
 
 /************* About Section ***********/
 
@@ -50,4 +62,37 @@ footer {
 }
 
 
+/************* Footer ***********/
+footer {
+	background: #664D52;
+}
 
+
+
+
+/************* Media Queries ***********/
+
+@media(min-width: 768px) {
+	
+	/************* Header ***********/
+
+	header {
+		float: left;
+	}
+
+	header h1 {
+		float: left;
+	}
+
+	nav ul {
+	  list-style: none;
+	  float: right;
+	}
+
+	nav ul li {
+	  float: left;
+	}
+	h1 {
+			font-size: 54px;
+		}
+	}
