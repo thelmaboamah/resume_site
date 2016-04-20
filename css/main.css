@@ -1,4 +1,7 @@
 /************* General Styles***********/
+* {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 	background: #fff;
@@ -37,22 +40,25 @@ section span {
 header {
 	background: #3A5159;
 	color: #fff;
-	float: left;
-  	width: 100%;
-  	position: fixed;
 }
 
-header h1 {
-	float: left;
+h1 {
+	margin: 0;
 }
 
-nav ul {
-  list-style: none;
-  float: right;
+header .content-wrapper {
+	text-align: center;
 }
 
-nav ul li {
-  float: left;
+header li {
+	display: inline-block;
+	margin: 20px 60px 30px 0; 
+	font-weight: 600;
+	font-size: 28px;
+}
+
+header ul {
+	margin: 0;
 }
 
 /************* About Section ***********/
@@ -60,11 +66,16 @@ nav ul li {
 #about {
 	border-bottom: 2px solid #3A5159;
 }
+#about-top {
+	text-align: center;
+}
 
 
 /************* Footer ***********/
 footer {
 	background: #664D52;
+	color: #fff;
+	font-size: 18px;
 }
 
 
@@ -75,24 +86,6 @@ footer {
 @media(min-width: 768px) {
 	
 	/************* Header ***********/
-
-	header {
-		float: left;
-	}
-
-	header h1 {
-		float: left;
-	}
-
-	nav ul {
-	  list-style: none;
-	  float: right;
-	}
-
-	nav ul li {
-	  float: left;
-	}
 	h1 {
 			font-size: 54px;
 		}
-	}
